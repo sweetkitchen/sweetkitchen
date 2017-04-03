@@ -7,3 +7,4 @@
   git add -f dist
   git commit -m sweetkitchen
   git subtree push --prefix dist origin gh-pages
+  git push -f origin gh-pages
