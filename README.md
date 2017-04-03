@@ -2,9 +2,6 @@
   yarn install
   yarn dev
   yarn build
+  git push origin --delete gh-pages
   git checkout -b gh-pages
-  yarn build
-  git add -f dist
-  git commit -m sweetkitchen
   git subtree push --prefix dist origin gh-pages
-  git push -f origin gh-pages
