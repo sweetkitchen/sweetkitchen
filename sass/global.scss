@@ -1,0 +1,107 @@
+// @import "bourbon";
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+/*思源體*/
+
+@import url(//fonts.googleapis.com/earlyaccess/cwtexhei.css);
+
+/*黑體*/
+
+@import url(//fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+/*園體*/
+
+$text_color: rgba(71, 71, 71, 0.9);
+$logo_color: #ffa226;
+$main_color: #2fcbbe;
+$step_color: #D1658E;
+$label: #ffa226;
+$navHeight: 75px;
+$breakpoint: 767px;
+$comp_max_width: 1200px;
+$main_font: Roboto,
+'cwTeXYen',
+'Heiti TC',
+sans-serif;
+// $logo_font: 'Dr Sugiyama', 'Noto Sans TC', 'Heiti TC', sans-serif;
+$logo_font: Lobster,
+'cwTeXYen',
+'Heiti TC',
+sans-serif;
+// ********************** global reset
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: $main_font;
+    font-size: 2vmin;
+    padding: 0;
+    margin: 0;
+    visibility: visible;
+    opacity: 1;
+    // @include transition(opacity 0.5s ease);
+    transition: opacity 0.5s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    font-family: $main_font;
+    color: $text_color;
+}
+
+// ********************** transition
+.fade-enter,
+.fade-leave-active {
+    opacity: 0;
+}
+
+.fade-leave-active,
+.fade-enter-active {
+    transition: opacity .3s ease;
+}
+
+// ********************** default style for each component
+.component {
+    position: relative;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        font-family: $main_font;
+        a {
+            cursor: pointer !important;
+            color: dimgray;
+            border-bottom: 1px dashed lightgray;
+        }
+    }
+    strong {
+        font-weight: 900;
+        color: black;
+    }
+}
+
+// ********************** 2-way layout settings
+.fat-only {
+    @media only screen and (max-width: $breakpoint) {
+        display: none !important;
+    }
+    p {
+        font-size: 1.8rem;
+    }
+}
+
+.thin-only {
+    @media only screen and (min-width: $breakpoint+1) {
+        display: none !important;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+}
