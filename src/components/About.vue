@@ -66,5 +66,8 @@ export default {
 .About_component{
   min-height:94vh;
 }
+.fb-comments{
+  margin-top: 3em;
+}
 
 </style>
