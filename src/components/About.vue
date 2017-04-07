@@ -1,5 +1,6 @@
 <template lang="jade">
   .About_component
+    .fb-comments(data-href='https://sweetkitchen.github.io/sweetkitchen/#/topic/1742272759383174_1892967430980372', data-numposts='5')
 
 
 </template>
