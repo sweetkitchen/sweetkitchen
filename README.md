@@ -14,6 +14,8 @@
 
 ### 1. yarn FBbot  //更新data.json資料
 
+### 2. yarn build   
+
 ### 2. yarn deploy     
 
 
