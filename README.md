@@ -5,7 +5,7 @@
 ### 路經修改build/webpack.base.conf.js ->publicPath:
 ### 路經修改config/index.js ->assetsPublicPath:
 
-### 1. yarn install
+### 1. npm install
 
 ### 2. yarn dev
 
